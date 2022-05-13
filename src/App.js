@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Home/Home';
+import Home from './Shared/Home';
 import About from './About/About';
 import Appointment from './Appointment/Appointment';
 import Review from './Review/Review';
@@ -11,10 +10,10 @@ import Login from './Login/Login';
 
 function App() {
   return (
-    <div>
+    <div className=' max-w-7xl mx-auto px-12'>
       <Navbar />
       <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/appointment' element={<Appointment />} />
         <Route path='/review' element={<Review />} />
         <Route path='/about' element={<About />} />
